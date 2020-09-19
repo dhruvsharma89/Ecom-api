@@ -1,0 +1,51 @@
+
+<div class="container bgBlack p-3 mt-1" ng-controller="secondController" >
+           <h1 class="font-weight-bold  font1 h1 text-center fontss2 orangetext">~Best Selling~</h1>
+
+            <div class="masonry bgBlack">
+              <div ng-repeat="dt in myWel.bestselling" class="item hvr-wobble-vertical" ng-click="addtocart()">
+             
+               <a href="#!addtocart" >
+                 
+                <img src={{dt.url}} >
+                </a>
+              </div>
+            </div>      
+    </div>
+<!--
+ <div class="row" ng-controller="secondController"> 
+  <div class="column">
+    <img src="images/wedding.jpg" style="width:100%">
+    <img src="images/rocks.jpg" style="width:100%">
+    <img src="images/rocks.jpg" style="width:100%">
+    <img src="images/paris.jpg" style="width:100%">
+    <img src="images/nature.jpg" style="width:100%">
+    <img src="images/mist.jpg" style="width:100%">
+    <img src="images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/underwater.jpg" style="width:100%">
+    <img src="images/ocean.jpg" style="width:100%">
+    <img src="images/wedding.jpg" style="width:100%">
+    <img src="images/mountainskies.jpg" style="width:100%">
+    <img src="images/rocks.jpg" style="width:100%">
+    <img src="images/underwater.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/wedding.jpg" style="width:100%">
+    <img src="images/rocks.jpg" style="width:100%">
+    <img src="images/falls2.jpg" style="width:100%">
+    <img src="images/paris.jpg" style="width:100%">
+    <img src="images/nature.jpg" style="width:100%">
+    <img src="images/mist.jpg" style="width:100%">
+    <img src="images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/underwater.jpg" style="width:100%">
+    <img src="images/ocean.jpg" style="width:100%">
+    <img src="images/wedding.jpg" style="width:100%">
+    <img src="images/mountainskies.jpg" style="width:100%">
+    <img src="images/rocks.jpg" style="width:100%">
+    <img src="images/underwater.jpg" style="width:100%">
+  </div>
+</div>-->

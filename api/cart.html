@@ -1,0 +1,54 @@
+<div class="card shopping-cart mt-3 container bgBlack">
+            <div class="card-header bg-dark text-light">
+
+                <a href="#!mainpg" class="btn btn-outline-light btn-sm pull-right text-center">Continue shopping</a>
+                <div class="clearfix"></div>
+                
+            </div>
+            
+                    <!-- PRODUCT -->
+                    <div class="bg-dark" ng-repeat="dt in cdata.products">
+                    <div class="row text-white">
+                        <div class="col-12 col-sm-12 col-md-2 text-center p-4">
+                                <img class="img-responsive" src={{dt.url}} alt="preview" width="120" height="180">
+                        </div>
+                        <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+                            <h4 class="product-name"><strong>{{dt.name}}</strong></h4>
+                            <h4>
+                                <small>{{dt.description}}</small>
+                            </h4>
+                        </div>
+                        <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row p-4">
+                            <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                                <h6><strong>{{dt.price}} <span class="text-muted">x</span></strong></h6>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <div class="quantity">
+                                    <center>
+                                    <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                                           size="4">
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 text-right">
+                                <button ng-click="deletecart()" type="button" class="btn btn-outline-danger btn-xs">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="colorwhite">
+                    </div>
+                    <!-- END PRODUCT -->
+                    
+            
+            <div class="card-footer bg-light">
+
+                <div class="pull-right" style="margin: 10px">
+                    <a href="#!login" class="btn bg-warning text-white pull-right">Checkout</a>
+                    <div class="pull-right p-2">
+                        Total price: Rs.<b>{{total}}</b>
+                    </div>
+                </div>
+            </div>
+        </div>

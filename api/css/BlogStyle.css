@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+-------------------------------------------
+https://conforio-theme.blogspot.in/
+___________________________________________
+Created By:Your Name
+Developer Email:yourname@company.com
+Template Feature:
+*/
+header, section, footer, aside, nav, main, article, figure, ducat {display: block;}
+*{ margin:0; padding:0; font-family:UnitFonts;}
+.clr{ clear:both;}
+/***********************Header Section************************/
+header{}
+header .sub_header{border:1px dotted rgba(104,150,213,1.00); width:90%; margin:auto;}
+.header_left{ width:30%; float:left;}
+.header_title{padding:2%; width:40%; float:left;}
+.header_right{ width:30%; float:left;}
+
+
+
+/***********************Header Section************************/

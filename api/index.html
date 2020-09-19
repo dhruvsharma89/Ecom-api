@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+   <head>
+       
+         <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+         <!-- Bootstrap CSS -->
+          <script src="js/jquery-3.3.1.min.js"></script>
+       	  <script src="js/bootstrap.js"></script>
+       	 <!-- Swiper JS -->
+          <script src="js/swiper.min.js"></script>
+          
+          <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+           <link href="css/bootstrap.min.css" rel="stylesheet">
+           
+           <link href="css/style.css" rel="stylesheet">
+           
+           <link href="css/fontawesome-all.min.css" rel="stylesheet">
+           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+           <link href="https://fonts.googleapis.com/css?family=Pacifico|Spirax" rel="stylesheet">
+           <link href="css/animatedbuttons.css" rel="stylesheet">
+           <link href="css/animate.css-master/animate.min.css" rel="stylesheet">
+           <link href="css/Hover-master/css/hover-min.css" rel="stylesheet">
+           <!-- Link Swiper's CSS -->
+              <link rel="stylesheet" href="css/swiper.min.css">
+            
+           <!-- load angular via CDN -->
+                 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+                 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+            
+            <script src="testapp.js"></script>
+            <link href="stylebestselling.css" rel="stylesheet">
+            <link href="gridlistSTYLE.css" rel="stylesheet">
+            <link href="styleaddtocart.css" rel="stylesheet">
+            <link href="cartstyle.css" rel="stylesheet">
+        <title>
+            myWebTEMPLATE
+        </title>
+        </head>
+
+   
+    <body>
+        
+<div class="container-fluid bg-black">
+<!----------------------------------nav------------------------------------------------------------>
+        <header >
+              <nav id="navbar1" class="navbar navbar-expand-lg  fixed-top " style="background-image: url(images/texture.jpg); image- opacity: 0.7;" >
+          <a id="logo1" class="navbar-brand mb-0 h1 orangetext font-weight-normal  font1" href="#">
+              <img src="images/gear1.png" width="90" height="60" alt=""> The Ignited Mind
+          </a>
+
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!--            <span class="navbar-toggler-icon bgorange">-->
+            <i class="fa fa-bars "></i>
+<!--            </span>-->
+          </button>
+
+        <div  class="collapse navbar-collapse text-white" id="navbarSupportedContent" >
+            <ul class="navbar-nav text-center nav-tabs " >
+              <li class="nav-item m-2 rounded active text-white">
+                <a class="nav-link text-white" href="#!mainpg">  Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item m-2 rounded">
+                <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#exampleModalCenter">Feedback</a>
+              </li>
+               <li class="nav-item  m-2  rounded">
+                <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#exampleModalCenter1">Contact</a>
+                </li>
+              <li class="nav-item dropdown m-2 rounded">
+                <a class="nav-link cattag dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#!gridlist">T-shirts</a>
+                  <a class="dropdown-item" href="#">Cases and Skins</a>
+                  <a class="dropdown-item" href="#">Gifts</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#!bestselling">Best Selling </a>
+                </div>
+              </li>
+              
+            </ul>
+
+
+            <form class="form-inline my-2 my-lg-0 ml-lg-auto ml-2 mr-2 ">
+              <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" >
+              <button class="btn-outline-light rounded my-2 my-sm-0 p-1 mr-sm-2" type="submit" ><a href="www.google.in"><i class="fas fa-search"></i></a></button>
+              <span><button ng-click="readcart()" class=" btn-outline-light rounded my-2 my-sm-0 p-1"><a href="#!cart" ><i class="fas fa fa-shopping-cart "></i></a></button></span>
+            </form>
+          </div>
+        </nav>
+        <!--Feedback Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header colorblue1">
+                        <h5 class="modal-title text-white" id="exampleModalCenterTitle">Provide Your Feedback Here</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <textarea class="w-100"></textarea>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             <!--Feedback Modal -->
+
+              <!--Contact Modal -->
+                <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header colorblue1">
+                        <h5 class="modal-title text-white" id="exampleModalCenterTitle">Contacts</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <h6>Admin</h6>
+                          <p>hruv89@gmail.com</p>
+                          <p>8860293091</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             <!--Contact Modal -->
+        </header>   
+         <div class="bg-warning" style="height: 80px;"></div>
+    
+    
+         <div ng-view >
+             
+         </div>
+        
+       
+<!--------------------------ng-View---------------------------------------------->  
+        
+  	
+			<!-- Footer -->
+	<section id="footer" class="pt-3 text-white">
+		<div class="container-fluid" style="background-image: url(images/texture.jpg); image- opacity: 0.7;" >
+			<div class="row text-center text-xs-center text-sm-left text-md-left ">
+				<div class="col-xs-12 col-sm-4 col-md-4 pt-2">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 pt-2">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 pt-2">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">The Ignited Mind</a></u> is a Registered MSP/ISO </p>
+					<p class="h6">&copy; All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">The Ignited Mind</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+		  
+        
+        
+        
+        
+        
+    </div>
+        
+        
+    </body>

@@ -1,0 +1,105 @@
+.gridlist { /* Masonrygridlist container */
+     -webkit-column-count: 4;
+    -webkit-column-gap: 1em;
+}
+@media only screen and (max-width: 320px) {
+    .gridlist{
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .gridlist{
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .gridlist {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .gridlist{
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+.gridlistcard{
+    min-width: 20% !important;
+}
+
+
+.cardgrid {
+  box-shadow: 0 4px 8px 0 rgba(239, 137, 65, 0.33);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  
+}
+
+.cardgrid button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: darkorange;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+/*-----------------------color and font effects---------------------------*/
+.orangetext{
+    color: darkorange;
+    
+}
+.textcolorWhite{
+    text-decoration-color: white;
+}
+.colordark{
+    background-color: #312a2b;
+}
+.fonthem{
+    font-size: .5em;
+}
+.font1{
+   
+    font-family: 'Spirax', cursive;
+}
+.font2{
+   
+    font-family: 'pacifico', cursive;
+}
+.font3{
+    font-family: cursive;
+}
+
+.colorblue1{
+    background-color: #0b3356;
+}
+.bgorange{
+    background-color: darkorange;
+}
+.colorwhite{
+    background-color: #f8f9fa;
+}
+
+.bgBlack{
+    background-color: black;
+}
+

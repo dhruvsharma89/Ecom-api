@@ -1,0 +1,56 @@
+
+		<div class="cardaddtocart bg-light">
+			<div class="container-fliud " ng-controller="fourthController">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="{{url}}" /></div>
+						  <div class="tab-pane" id="pic-2"><img src="{{url}}" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="{{url}}" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="{{url}}" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="{{url}}" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="{{url}}" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="{{url}}" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="{{url}}" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="{{url}}" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="{{url}}" /></a></li>
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{name}}</h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							
+						</div>
+						<p class="product-description">{{description}}</p>
+						<h4 class="price">current price: <span>Rs.{{price}}</span></h4>
+						
+						<h5 class="sizes" >sizes:
+							<span class="size" data-toggle="tooltip" title="small">s</span>
+							<span class="size" data-toggle="tooltip" title="medium">m</span>
+							<span class="size" data-toggle="tooltip" title="large">l</span>
+							<span class="size" data-toggle="tooltip" title="xtra large">xl</span>
+						</h5>
+						<h5 class="colors">colors:
+							<span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
+							<span class="color green"></span>
+							<span class="color blue"></span>
+						</h5>
+						<div class="action p-2" style="max-width: 80%;" >
+							<button style="max-width: 80%; padding: 0.2em 0.5em;" class="add-to-cart btn hvr-wobble-vertical align-content-center" type="button" ng-click="sendtocart()">add to cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+

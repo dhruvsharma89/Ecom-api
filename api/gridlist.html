@@ -1,0 +1,61 @@
+<div class="container-fluid" style="background-image: url(images/texture.jpg); image- opacity: 0.7;">
+ <div class="container pt-5" ng-controller="thirdController" >
+   
+    <!---
+       <div class=" row card-deck mb-2 mt-2  " >
+        <div class="p-2 gridlist" >
+          <center>
+            <div class="cardgrid hvr-grow mb-2 mt-2 " ng-repeat="dt in myWel.s">
+              <img class="card-img-top" src={{dt.url}} alt="Card image" >
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <span><p class="text-white bgorange">Rs.319.99</p></span>
+                <p><button class="mt-auto font3">Shop Now</button></p>
+              </div>
+            </div>
+          </center>
+        </div>
+    </div>
+    ---->
+
+    
+<!--
+    <div class="card-deck" >
+      <div class="card gridlistcard hvr-grow mb-2 mt-2" ng-repeat="dt in myWel.s" ng-click="addtocart()" >
+       <a href="#!addtocart">
+          <img class="card-img-top" src={{dt.url}} alt="Card image cap">
+        
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <span><p class="text-white bgorange">Rs.{{dt.price}}</p></span>
+          </div>
+          
+           <strong>{{dt.description}}</strong>
+       </a>
+      </div>
+    </div>
+-->
+    
+    
+     <div class="card-deck" >
+      <div class="card gridlistcard hvr-grow mb-2 mt-2  border-warning " ng-repeat="dt in myWel.s" ng-click="addtocart()" style="border-width: medium;">
+       <a href="#!addtocart">
+          <img class="card-img-top" src={{dt.url}} alt="Card image cap">
+        
+          <div class="card-img-overlay d-flex flex-column justify-content-end hvr-bob">
+                <p class="text-white bgorange font2">Rs.{{dt.price}}</p>
+          </div>
+           
+           
+       </a>
+       <a href="#!addtocart" class="font2 font-weight-light text-white bgorange text-center p-2 hvr-bob" >
+           <strong>{{dt.name}}</strong>
+       </a>
+                            
+
+      </div>
+    </div>
+    
+</div>
+</div>
+
+
+

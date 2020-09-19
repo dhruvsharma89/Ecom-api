@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+   <head>
+       
+         <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+         <!-- Bootstrap CSS -->
+          <script src="js/jquery-3.3.1.min.js"></script>
+       	  <script src="js/bootstrap.js"></script>
+       	 <!-- Swiper JS -->
+          <script src="js/swiper.min.js"></script>
+          
+          <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+           <link href="css/bootstrap.min.css" rel="stylesheet">
+           
+           <link href="css/style.css" rel="stylesheet">
+           
+           <link href="css/fontawesome-all.min.css" rel="stylesheet">
+           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+           <link href="https://fonts.googleapis.com/css?family=Pacifico|Spirax" rel="stylesheet">
+           <link href="css/animatedbuttons.css" rel="stylesheet">
+           <link href="css/animate.css-master/animate.min.css" rel="stylesheet">
+           <link href="css/Hover-master/css/hover-min.css" rel="stylesheet">
+           <!-- Link Swiper's CSS -->
+              <link rel="stylesheet" href="css/swiper.min.css">
+            
+           <!-- load angular via CDN -->
+                 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+                 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+            
+            <script src="testapp.js"></script>
+            <link href="stylebestselling.css" rel="stylesheet">
+            <link href="gridlistSTYLE.css" rel="stylesheet">
+            <link href="styleaddtocart.css" rel="stylesheet">
+            <link href="cartstyle.css" rel="stylesheet">
+        <title>
+            myWebTEMPLATE
+        </title>
+        </head>
+
+   
+    <body>
+        
+<div class="container bg-dark ">
+     <div class="container bg-dark ">
+    <form name="myForm" class="needs-validation text-white border-warning mt-2 mb-2" novalidate>
+      <div class="form-row text-white">
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltip01">First name</label>
+          <input type="text" name="firstName" ng-model="user.firstName" class="form-control" id="validationTooltip01" placeholder="First name"  required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+          <div role="alert">
+              <span class="error" ng-show="myForm.firstName.$error.required && myForm.firstName.$touched && myForm.firstName.$invalid">
+               Required!</span>  
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltip02">Last name</label>
+          <input type="text" name="lastName" ng-model="user.lastName" class="form-control" id="validationTooltip01" placeholder="Last name"  required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+          <div role="alert">
+              <span class="error" ng-show="myForm.lastName.$error.required && myForm.lastName.$touched && myForm.lastName.$invalid">
+               Required!</span>  
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltip03">email</label>
+          <input type="email" name="email" ng-model="user.email" class="form-control" id="useremail" placeholder="email"  required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+          <div role="alert">
+              <span class="error" ng-show="myForm.email.$error.required && myForm.email.$touched && myForm.email.$invalid">
+               Required!</span>
+               <span class="error" ng-show="myForm.email.$error.email">
+        Not valid email!</span>  
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+          <div class="col-6 mb-3">
+            <label for="exampleInputPassword1">Password</label>
+            <input name="password" type="password" ng-minlength="5" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+            <div role="alert">
+              <span class="error" ng-show="myForm.password.$error.minlength">
+                Too short!</span>
+              <span class="error" ng-show="myForm.password.$error.required">
+               Required!</span>
+            </div>
+          </div>
+          
+          <div class="col-6 mb-3">
+            <label for="exampleInputPassword2">Confirm Password</label>
+            <input name="password" type="password" ng-minlength="5" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+          </div>
+          
+          <div role="alert">
+             
+              <span class="error" ng-show="myForm.password.$error.minlength">
+                Too short!</span>
+              <span class="error" ng-show="myForm.password.$error.required">
+               Required!</span>
+               
+          </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationTooltip03">City</label>
+          <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationTooltip04">State</label>
+          <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+          <div class="invalid-tooltip">
+            Please provide a valid state.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationTooltip05">Zip</label>
+          <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+          <div class="invalid-tooltip">
+            Please provide a valid zip.
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-warning mb-1" type="submit" ng-submit="">Submit form</button>
+    </form>
+    </div>
+        </div>
+</body>
+</html>
